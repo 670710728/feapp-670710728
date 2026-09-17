@@ -1,10 +1,9 @@
-// import { useState } from 'react';
-
-function SearchBox({query, setQuery}) {
-//   const [query, setQuery] = useState('');
+//import { useState } from "react";
+function SearchBox({query, setQuery}) {  //Searchbox.jsx
+  //const [query, setQuery] = useState('');
 
   return (
-    <div className="space-y-2 p-4">
+    <div className="space-y-2 p-4 pr-0">
       <input
         value={query}                              // 1. ค่าใน input มาจาก state
         onChange={(e) => setQuery(e.target.value)} // 2. พิมพ์แล้วอัปเดต state
@@ -17,4 +16,5 @@ function SearchBox({query, setQuery}) {
     </div>
   );
 }
+
 export default SearchBox;
