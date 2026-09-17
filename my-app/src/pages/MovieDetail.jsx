@@ -7,7 +7,7 @@ function MovieDetail() {
   const movie = movies.find(m => m.id === Number(id));
 
   if (!movie) {
-    return <p className="p-8 text-center text-slate-500">ไม่พบหนังเรื่องนี้ 😢</p>;
+    return <p className="p-8 text-center text-slate-600">ไม่พบหนังเรื่องนี้ 😢</p>;
   }
 
   return (
